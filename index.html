@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>École</title>
+</head>
+<body>
+    <nav>
+        <a href="#home" onclick="showSection('home')">Accueil</a>
+        <a href="#inscription" onclick="showSection('inscription')">Inscription</a>
+        <a href="#apropos" onclick="showSection('apropos')">À propos de l'école</a>
+        <a href="#authentification" onclick="showSection('authentification')">Authentification</a>
+    </nav>
+
+    <div id="home" class="container">
+        <h1>Bienvenue à notre école!</h1>
+        <p>Bienvenue sur la page d'accueil de notre école.</p>
+    </div>
+
+    <div id="inscription" class="container hidden">
+        <h1>Inscription</h1>
+        <form>
+            <label for="nom">Nom:</label><br>
+            <input type="text" id="nom" name="nom"><br>
+            <label for="postnom">Post-nom:</label><br>
+            <input type="text" id="postnom" name="postnom"><br>
+            <label for="prenom">Prénom:</label><br>
+            <input type="text" id="prenom" name="prenom"><br>
+            <label for="sexe">Sexe:</label><br>
+            <input type="text" id="sexe" name="sexe"><br>
+            <label for="lieux_naissance">Lieux de naissance:</label><br>
+            <input type="text" id="lieux_naissance" name="lieux_naissance"><br>
+            <label for="parcelle">N° parcelle:</label><br>
+            <input type="text" id="parcelle" name="parcelle"><br>
+            <label for="avenue">Avenue:</label><br>
+            <input type="text" id="avenue" name="avenue"><br>
+            <label for="quartion">Quartion:</label><br>
+            <input type="text" id="quartion" name="quartion"><br>
+            <label for="comune">Commune:</label><br>
+            <input type="text" id="comune" name="comune"><br>
+            <label for="province">Province:</label><br>
+            <input type="text" id="province" name="province"><br>
+            <label for="territoir">Territoir:</label><br>
+            <input type="text" id="territoir" name="territoir"><br>
+            <label for="secteur">Secteur:</label><br>
+            <input type="text" id="secteur" name="secteur"><br>
+            <input type="submit" value="S'inscrire">
+        </form>
+    </div>
+
+    <div id="apropos" class="container hidden">
+        <h1>À propos de l'école</h1>
+        <p>Informations sur l'école...</p>
+    </div>
+
+    <div id="authentification" class="container hidden">
+        <h1>Authentification</h1>
+        <form>
+            <label for="login">Login:</label><br>
+            <input type="text" id="login" name="login"><br>
+            <label for="password">Mot de passe:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <button type="submit">Se connecter</button>
+            <button type="reset">Annuler</button>
+        </form>
+    </div>
+
+    <script src="./index.js">
+    </script>
+</body>
+</html>
